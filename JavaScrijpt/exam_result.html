@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exam Result</h1>
+    <form name="MyForm">
+        <label for="name"><b>Name</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="name" id="name" placeholder="enter your name">
+        <br><br>
+        <label for="html"><b>HTML</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="html" id="html" placeholder="enter only number">
+        <br><br>
+        <label for="css"><b>CSS</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="css" id="css" placeholder="enter only number">
+        <br><br>
+        <label for="js"><b>JavaScript</b></label>&nbsp;&nbsp;
+        <input type="number" name="js" id="js" placeholder="enter only number">
+        <br><br>
+        <button type="button" onclick="result()">Result</button>
+
+    </form>
+    <script>
+        function result (){
+        let name = document.MyForm.name.value;
+        console.log(name);
+        let html = document.MyForm.html.value;
+        console.log(html);
+        let css = document.MyForm.css.value;
+        console.log(css);
+        let js = document.MyForm.js.value;
+        console.log(js);
+
+        
+       
+        if (html <=49 || css<= 49 ||  js<=49 ){
+            document.write('<h1>'+name+' is exam Fail.</h1>')
+        }
+        else if (html>= 81 && css <81 && js< 81){
+            document.write('<h1>'+name+'is passed the exam HTML with Distinction.</h1>')
+        }
+        else if (html <81 && css >=81 && js <81){
+            document.write('<h1>'+name+'is passed the exam CSS with Distinction.</h1>')
+        }
+        else if (html <81 && css < 81 && js >= 81){
+            document.write('<h1>'+name+'is passed the exam JavaScript with Distinction.</h1>')
+        }
+        else if (html >=81 && css >=81 && js <81){
+            document.write('<h1>'+name+'is passed the exam HTML and CSS with Distinction.</h1>')
+        }
+        else if (html >=81 && css <81 && js >=81){
+            document.write('<h1>'+name+'is passed the exam HTML and JavaScript with Distinction.</h1>')
+        }
+        else if (html <81 && css >=81 && js >=81){
+            document.write('<h1>'+name+'is passed the exam CSS and Javascript with Distinction.</h1>')
+        }
+        else if (html >=81 && css >=81 && js >=81){
+            document.write('<h1>'+name+'is passed the exam (All Subject) with Distinction.</h1>')
+        }  
+            else
+        {
+            document.write('<h1>'+name+' is exam Pass.</h1>')
+        }
+
+    
+    }
+    </script>
+</body>
+</html>

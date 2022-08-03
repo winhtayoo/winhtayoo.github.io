@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>String Lesson</h1>
+    <script>
+        //String
+    let firstName = 'Win';
+    let lastName = "Htay Oo";
+    console.log(typeof(firstName));
+    console.log(typeof(lastName));
+    console.log(firstName.length);
+    console.log(lastName.length);
+    let fullName = firstName.concat (' ',lastName);
+    console.log(fullName);
+    console.log('My name is' + fullName);
+    document.write(`<h1>My name is ${fullName}</h1>`);
+    console.log(fullName[5]);
+    console.log(fullName.toUpperCase());
+    console.log(fullName.toLowerCase());
+    console.log(fullName.substr(9,4));
+    let job = 'Web Developer';
+    console.log(job.trim());
+    let ser = 'JavaScript is funny';
+    let ser_result = ser.search('is');
+    console.log(ser_result);
+
+    let rep = 'I want to visit Yangon';
+    let rep_result =rep.replace('Yangon,Naypyitaw');
+    console.log(rep_result);
+
+    let num = '3,500,000';
+    num = num .replace(/\,/g,'');
+    console.log(typeof(num));
+    num = Number(num);
+    console.log(typeof(num));
+
+    console.log('Hello \n JS');
+    console.log('\t JavaScript');
+    console.log('I\'m a programmer');
+    console.log("I'm a programmer");
+
+    
+    </script>
+</body>
+</html>
