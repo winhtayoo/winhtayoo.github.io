@@ -1,0 +1,17 @@
+h3 {
+    color:blue;
+    font-size: 50px;
+    text-align: center;
+}
+small {
+    color:blueviolet;
+    font-size: 30px;
+}
+/* universal selector */
+*{
+    color:red;
+}
+/* tag/element selector */
+h1{
+    color:green;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Function
+        function funName(){
+            document.write('<h1>Hello Function.</h1>')
+        }
+        funName();
+
+        //Function add
+        function add(num1,num2){
+            let result = num1 + num2;
+            return result;
+        }
+        let addAesult =add(30,50);
+        document.write(`<h3>Add result:${addAesult}</h3>`);
+
+        function sub(num1 =50, num2 = 30){
+            let result = num1 - num2;
+            return result;
+        }
+        let subResult = sub();
+        let subResult1 = sub(100 , 50);
+        document.write(`<h3> Sub Result : ${subResult}</h3>`);
+        document.write(`<h3> Sub Result One :${subResult1} </h3>`);
+
+        function getSize(length,width,height){
+        let area = length * width;
+        let volume = length * width * height;
+        let sizes = [area , volume];
+        return sizes;
+        }
+        let area = getSize(3,2,3)[0];
+        let volume =getSize(3,2,3)[1];
+        document.write(`<h3>Area is :${area}</h3>`);
+        document.write(`<h3>Area is :${volume}</h3>`);
+
+
+
+
+
+    </script>
+</body>
+</html>
